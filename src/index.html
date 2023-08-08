@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/technews-web-components.esm.js"></script>
+    <script nomodule src="/build/technews-web-components.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        document
+          .getElementsByTagName('tn-text-field')[0]
+          .addEventListener('change', e => console.log(e.target.value));
+      });
+    </script>
+  </head>
+  <body>
+    <tn-button label="test"></tn-button>
+    <tn-text-field placeholder="test" value="test"></tn-text-field>
+  </body>
+</html>
